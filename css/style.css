@@ -1,52 +1,73 @@
-body {
-  background-color: black;
-  color: white;
-}
 /* Navar */
-.container-fluid {
-  height: 80px;
-}
 .escudo {
-  height: 100px;
+  height: 130px;
 }
 
-.estiloBarra {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  font-size: 1.1rem;
-  color: white;
-  text-decoration: none;
+.sobre-la-academia {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+.sobre-la-academia h3 {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  color: rgb(255, 255, 255);
+  align-self: center;
+  justify-self: center;
+  font-size: 80px;
+}
+.sobre-la-academia p {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  text-align: center;
+  align-self: center;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+}
+.sobre-la-academia img {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+.foto-academia {
+  height: auto;
 }
 
+/* Footer */
 .redes {
   display: flex;
-  justify-content: end;
+  justify-content: center;
+  justify-self: end;
+  align-self: center;
   gap: 15px;
   margin-right: 50px;
 }
 
-.contenedorPrincipal {
-  display: flex;
-  width: auto;
-  height: 100%;
-}
-
-.contenedorTestimonios {
-  background-color: antiquewhite;
-  border-radius: 2%;
-  text-align: center;
-  color: black;
-  display: flex;
-}
-/* Footer */
-#footer {
-  height: 80px;
-}
 .escudo-footer {
-  height: 100px;
+  height: 150px;
 }
-
-.carousel-img {
-  height: 1200px;
-  object-fit: cover;
+.infoFooter {
+  display: flex;
+  align-self: center;
+  justify-self: center;
+}
+.infoFooter ul {
+  list-style: none;
+  width: 100%;
+  gap: 10px;
+}
+.infoFooter ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.pieDePafina {
+  background-color: rgb(67, 67, 67);
+}
+.numeroTelefono {
+  color: royalblue;
 }
