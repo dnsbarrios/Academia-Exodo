@@ -11,7 +11,8 @@
   height: 130px;
 }
 .textoNavbar {
-  font-family: "prometo trial", sans-serif, bold italic;
+  /* font-family: "prometo trial", sans-serif, bold italic; */
+  font-family: Prometo Trial;
 }
 .textoItem {
   font-family: "prometo trial", sans-serif, bold italic;
