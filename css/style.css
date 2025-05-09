@@ -1,9 +1,17 @@
+/* Fuentes */
+@font-face {
+  font-family: "prometo trial";
+  src: url("../Fonts/prometo-trial/Prometo_Trial_XBd.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
 /* Navar */
 .escudo {
   height: 130px;
 }
 .textoNavbar {
-  font-family: prometo trial, sans-serif, bold italic;
+  font-family: "prometo trial", sans-serif, bold italic;
 }
 .textoItem {
   font-family: "prometo trial", sans-serif, bold italic;
@@ -172,7 +180,7 @@
 }
 
 .card-body h5 {
-  font-family: prometo trial, sans-serif, bold italic;
+  font-family: "prometo trial", sans-serif, bold italic;
   margin-bottom: 10px;
   padding-top: 8px;
   text-align: center;
@@ -181,7 +189,7 @@
 }
 
 .card-body p {
-  font-family: prometo trial, sans-serif;
+  font-family: "prometo trial", sans-serif;
   font-size: 0.95rem;
   color: #444;
   line-height: 1.4;
