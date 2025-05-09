@@ -2,6 +2,16 @@
 .escudo {
   height: 130px;
 }
+.textoNavbar {
+  font-family: prometo trial, sans-serif, bold italic;
+}
+.textoItem {
+  font-family: "prometo trial", sans-serif, bold italic;
+}
+
+.inicialExodo {
+  color: rgb(5, 97, 151);
+}
 
 /* carousel */
 .fraseCarousel {
@@ -21,11 +31,12 @@
 
 .sobre-la-academia h3 {
   grid-column: 2 / 5;
-  grid-row: 1 / 2;
+  grid-row: 1 / 4;
   color: white;
   align-self: center;
   justify-self: center;
   font-size: clamp(24px, 5vw, 80px);
+  font-family: prometo trial, sans-serif, bold italic;
   text-align: center;
   z-index: 1;
 }
@@ -37,8 +48,10 @@
   align-self: center;
   justify-self: center;
   font-size: clamp(16px, 3vw, 30px);
+  font-family: prometo trial, sans-serif;
   color: white;
   z-index: 1;
+  margin-bottom: 100px;
 }
 
 .sobre-la-academia img {
@@ -81,4 +94,115 @@
 }
 .numeroTelefono {
   color: royalblue;
+}
+
+/* Sobre nosotros */
+.sobreNosotros {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  position: relative;
+  overflow: hidden;
+}
+
+.sobreNosotros h3 {
+  grid-column: 2 / 5;
+  grid-row: 1 / 4;
+  color: white;
+  align-self: center;
+  justify-self: center;
+  font-size: clamp(24px, 5vw, 80px);
+  font-family: prometo trial, sans-serif, bold italic;
+  text-align: center;
+  z-index: 1;
+}
+
+.sobreNosotros p {
+  grid-column: 2 / 5;
+  grid-row: 4 / 5;
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+  font-size: clamp(16px, 3vw, 30px);
+  font-family: prometo trial, sans-serif;
+  color: white;
+  z-index: 1;
+  margin-bottom: 100px;
+}
+
+.sobreNosotros img {
+  grid-column: 1 / 6;
+  grid-row: 1 / 6;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Seccion de nuesto personal utilizando flex box y media*/
+
+.nuestroEquipo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+  padding: 20px;
+}
+
+.card-equipo {
+  width: 18rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.card-equipo:hover {
+  transform: scale(1.03);
+}
+
+.card-equipo img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-body h5 {
+  font-family: prometo trial, sans-serif, bold italic;
+  margin-bottom: 10px;
+  padding-top: 8px;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #222;
+}
+
+.card-body p {
+  font-family: prometo trial, sans-serif;
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.4;
+  text-align: center;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+/* Para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  .nuestroEquipo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-equipo {
+    width: 90%;
+  }
+  .card-equipo img {
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
+  }
 }
