@@ -220,3 +220,171 @@
     object-fit: contain;
   }
 }
+
+/* Pagina programas */
+
+.programas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  justify-items: center;
+  padding: 20px 20px;
+}
+
+.programas img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.fotoUno {
+  justify-self: end;
+}
+.fotoDos {
+  align-self: center;
+  justify-self: start;
+}
+.fotoTres {
+  grid-column: 1 / -1;
+}
+@media screen and (max-width: 768px) {
+  .programas {
+    grid-template-columns: 1fr;
+  }
+
+  .fotoTres {
+    grid-column: auto;
+  }
+}
+
+/* Pagina de incripciones */
+.resaltar-titulos {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid #ffc107;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(3px);
+}
+.inscripcion {
+  background: #f9f9f9;
+}
+
+form input,
+form textarea {
+  border-radius: 8px;
+}
+
+form button {
+  font-weight: bold;
+}
+
+.form-fondo {
+  background-image: url("../assets/img/materiales.JPG");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+}
+.form-fondo form {
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 2;
+}
+
+/* Pagina de contacto */
+.ubicacion {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  color: white;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.imagen-fondo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(60%);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.titulo {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 4px black;
+}
+
+.info-contacto {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.info-contacto p {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.info-contacto i {
+  margin-right: 8px;
+  color: #ffcc00;
+}
+
+.btn-mapa {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #ffcc00;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.btn-mapa:hover {
+  background: #e6b800;
+}
+
+.mapa-contenedor {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .mapa-contenedor iframe {
+    width: 90vw;
+    height: 250px;
+  }
+
+  .titulo {
+    font-size: 1.8rem;
+  }
+
+  .info-contacto {
+    font-size: 0.95rem;
+    padding: 15px 20px;
+  }
+}
