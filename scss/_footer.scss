@@ -1,0 +1,33 @@
+/* Footer */
+.redes {
+  display: flex;
+  justify-content: center;
+  justify-self: end;
+  align-self: center;
+  gap: 15px;
+  margin-right: 50px;
+}
+
+.escudo-footer {
+  height: 150px;
+}
+.infoFooter {
+  display: flex;
+  align-self: center;
+  justify-self: center;
+}
+.infoFooter ul {
+  list-style: none;
+  width: 100%;
+  gap: 10px;
+}
+.infoFooter ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.pieDePafina {
+  background-color: rgb(67, 67, 67);
+}
+.numeroTelefono {
+  color: royalblue;
+}
