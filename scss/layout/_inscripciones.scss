@@ -1,32 +1,35 @@
-/* Pagina de incripciones */
-.resaltar-titulos {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 2px solid #ffc107;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(3px);
-}
 .inscripcion {
   background: #f9f9f9;
-}
 
-form input,
-form textarea {
-  border-radius: 8px;
-}
+  &.form-fondo {
+    background-image: url("../assets/img/materiales.JPG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
 
-form button {
-  font-weight: bold;
-}
+    form {
+      background-color: rgba(255, 255, 255, 0.9);
+      z-index: 2;
+    }
+  }
 
-.form-fondo {
-  background-image: url("../assets/img/materiales.JPG");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-  z-index: 1;
-}
-.form-fondo form {
-  background-color: rgba(255, 255, 255, 0.9);
-  z-index: 2;
+  .resaltar-titulos {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid #ffc107;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(3px);
+  }
+
+  form {
+    input,
+    textarea {
+      border-radius: 8px;
+    }
+
+    button {
+      font-weight: bold;
+    }
+  }
 }

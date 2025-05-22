@@ -1,36 +1,35 @@
-/* Pagina programas */
-
 .programas {
   display: grid;
   grid-template-columns: 1fr 1fr;
-
   justify-items: center;
-  padding: 20px 20px;
-}
+  padding: 20px;
 
-.programas img {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-  border-radius: 8px;
-  object-fit: cover;
-}
-.fotoUno {
-  justify-self: end;
-}
-.fotoDos {
-  align-self: center;
-  justify-self: start;
-}
-.fotoTres {
-  grid-column: 1 / -1;
-}
-@media screen and (max-width: 768px) {
-  .programas {
-    grid-template-columns: 1fr;
+  img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+
+  .fotoUno {
+    justify-self: end;
+  }
+
+  .fotoDos {
+    align-self: center;
+    justify-self: start;
   }
 
   .fotoTres {
-    grid-column: auto;
+    grid-column: 1 / -1;
+  }
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+
+    .fotoTres {
+      grid-column: auto;
+    }
   }
 }

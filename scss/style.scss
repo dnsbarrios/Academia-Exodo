@@ -1,11 +1,19 @@
-@use "./base/fonts";
-@use "./base/reset";
-@use "./components/navbar";
-@use "./components/carousel";
-@use "./layout/sobre-la-academia";
-@use "./components/footer";
-@use "./layout/sobre-nosotros";
-@use "./components/nuestro-equipo";
-@use "./layout/programas";
-@use "./layout/inscripciones";
-@use "./layout/contacto";
+//Lamamos las utilidades Primero
+@import "./utilities/variables";
+
+//Llamamos lo de la carpeta Base
+@import "./base/reset";
+@import "./base/fonts";
+
+//Lamamos a los layouts
+@import "./layout/contacto";
+@import "./layout/inscripciones";
+@import "./layout/programas";
+@import "./layout/sobre-nosotros";
+
+//Llamamos los componentes
+@import "./components/sobre-la-academia";
+@import "./components/navbar";
+@import "./components/carousel";
+@import "./components/footer";
+@import "./components/nuestro-equipo";
