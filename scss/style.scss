@@ -1,19 +1,17 @@
-//Lamamos las utilidades Primero
-@import "./utilities/variables";
+// Importaciones principales
+@use 'base/reset';
+@use 'base/fonts';
+@use 'base/variables';
+@use 'utilities/mixins';
+@use 'utilities/extends';
 
-//Llamamos lo de la carpeta Base
-@import "./base/reset";
-@import "./base/fonts";
+@use 'components/navbar';
+@use 'components/footer';
+@use 'components/carousel';
+@use 'components/sobre-la-academia';
+@use 'components/nuestro-equipo';
 
-//Lamamos a los layouts
-@import "./layout/contacto";
-@import "./layout/inscripciones";
-@import "./layout/programas";
-@import "./layout/sobre-nosotros";
-
-//Llamamos los componentes
-@import "./components/sobre-la-academia";
-@import "./components/navbar";
-@import "./components/carousel";
-@import "./components/footer";
-@import "./components/nuestro-equipo";
+@use 'layout/sobre-nosotros';
+@use 'layout/programas';
+@use 'layout/contacto';
+@use 'layout/inscripciones';
