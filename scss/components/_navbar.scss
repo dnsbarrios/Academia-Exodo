@@ -10,13 +10,14 @@ nav.navbar {
     flex-wrap: wrap;
 
     .escudo {
-      height: 130px;
+      height: 150px;
     }
 
     .navbar-brand {
-      font-family: var.$font-titulo;
-      font-size: 1.8rem;
-      font-weight: bold;
+      font-family: "Rajdhani", sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 2.5rem;
 
       .inicialExodo {
         color: var.$primary-color;
