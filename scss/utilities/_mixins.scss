@@ -12,18 +12,18 @@
 }
 
 @mixin titulo-principal {
-  font-family: $font-titulo;
+  font-family: "prometo trial titulos";
   font-size: clamp(2rem, 6vw, 4rem);
   text-align: center;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
-  color: $light-color;
+  color: greenyellow;
 }
 
 @mixin boton-principal($bg-color: #0dcaf0, $hover-color: #0aa1c2) {
   background-color: $bg-color;
-  color: $light-color;
+  color: white;
   padding: 0.75rem 1.5rem;
-  font-family: $font-titulo;
+  font-family: "prometo trial titulos";
   font-weight: bold;
   border: none;
   transition: background-color 0.3s ease;
