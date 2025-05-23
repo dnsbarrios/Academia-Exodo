@@ -6,18 +6,6 @@
 
 /* Fuentes */
 @font-face {
-  font-family: "prometo trial titulos";
-  src: url("../../fonts/prometo-trial/Prometo_Trial_XBd.ttf") format("truetype");
-  font-weight: bold;
-  font-style: italic;
-}
-@font-face {
-  font-family: "prometo trial subtitulos";
-  src: url("../../fonts/prometo-trial/Prometo_Trial_Md.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
   font-family: "Prometo Trial";
   src: url("PrometoTrial-BlackItalic.woff2") format("woff2"), url("PrometoTrial-BlackItalic.woff") format("woff");
   font-weight: 900;
@@ -26,7 +14,7 @@
 }
 @font-face {
   font-family: "Prometo Trial";
-  src: url("PrometoTrial-Black.woff2") format("woff2"), url("PrometoTrial-Black.woff") format("woff");
+  src: url("../../fonts/PrometoTrial-Black.woff2") format("woff2"), url("PrometoTrial-Black.woff") format("woff");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
