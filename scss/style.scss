@@ -4,10 +4,12 @@
 @use "./utilities/mixins" as mix;
 @use "./utilities/extends";
 
-@use "./layout/sobre-nosotros";
+@use "./layout/nosotros";
 @use "./layout/contacto";
 @use "./layout/inscripciones";
 @use "./layout/programas";
+@use "./layout/main-index";
 
 @use "./components/navbar";
 @use "./components/carousel";
+@use "./components/footer";

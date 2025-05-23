@@ -19,41 +19,93 @@
 }
 .sobreNosotros {
   position: relative;
+  width: 100%;
+  min-height: 100vh;
   overflow: hidden;
-  color: firebrick;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  padding: 3rem 1rem;
-  min-height: 100vh;
   text-align: center;
+  color: white;
 }
 .sobreNosotros img {
   position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   top: 0;
   left: 0;
   z-index: 0;
+  filter: brightness(0.4);
+}
+.sobreNosotros .overlay1 {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 100vh;
-  object-fit: cover;
-  filter: brightness(60%);
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
 }
-.sobreNosotros h3 {
+.sobreNosotros .contenido1 {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  padding: 2rem;
+}
+.sobreNosotros .contenido1 h3 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
   font-family: "prometo trial titulos";
-  font-size: clamp(2rem, 6vw, 4rem);
-  text-align: center;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
-  color: greenyellow;
-  z-index: 1;
   margin-bottom: 1rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
 }
-.sobreNosotros p {
-  font-size: clamp(1rem, 3vw, 1.5rem);
-  font-family: "prometo trial subtitulos", sans-serif;
-  max-width: 800px;
-  z-index: 1;
-  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+.sobreNosotros .contenido1 p {
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  font-family: "prometo trial subtitulos";
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+}
+
+.nuestroEquipo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 3rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.nuestroEquipo .card-equipo {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+.nuestroEquipo .card-equipo:hover {
+  transform: scale(1.02);
+}
+.nuestroEquipo .card-equipo img {
+  width: 100%;
+  height: 240px;
+  object-fit: contain;
+  border-bottom: 3px solid #ffc107;
+}
+.nuestroEquipo .card-equipo .card-body {
+  padding: 1.5rem;
+  text-align: center;
+}
+.nuestroEquipo .card-equipo .card-body h5 {
+  font-size: 1.4rem;
+  margin-bottom: 0.75rem;
+  font-family: "prometo trial titulos";
+  color: #333;
+}
+.nuestroEquipo .card-equipo .card-body p {
+  font-size: 1rem;
+  font-family: "prometo trial subtitulos";
+  color: #555;
+  line-height: 1.5;
 }
 
 .ubicacion {
@@ -215,6 +267,71 @@
   }
 }
 
+.sobre-la-academia {
+  position: relative;
+  overflow: hidden;
+  color: white;
+  min-height: 100vh;
+}
+.sobre-la-academia img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(60%);
+}
+.sobre-la-academia .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+.sobre-la-academia .contenido {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+.sobre-la-academia .contenido h3 {
+  font-size: clamp(2rem, 6vw, 4rem);
+  font-family: "prometo trial titulos", sans-serif;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+.sobre-la-academia .contenido p {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  font-family: "prometo trial subtitulos", sans-serif;
+  max-width: 800px;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+.testimonios-jugadores img {
+  background-color: #f8f9fa;
+  border-bottom: 3px solid #ffc107;
+}
+
+.testimonios-jugadores .card-title {
+  font-family: "pometo trial titulos", sans-serif;
+  font-size: 1.3rem;
+  color: #333;
+}
+
+.testimonios-jugadores .card-text {
+  font-family: "pometo trial subtitulos", sans-serif;
+  color: #555;
+}
+
 nav.navbar {
   background-color: #f8f9fa;
 }
@@ -247,6 +364,23 @@ nav.navbar .container-fluid .navbar-nav .nav-item .nav-link {
 }
 nav.navbar .container-fluid .navbar-nav .nav-item .nav-link:hover, nav.navbar .container-fluid .navbar-nav .nav-item .nav-link.active {
   color: rgb(5, 97, 151);
+}
+
+@keyframes zoomIn3D {
+  0% {
+    transform: scale3d(0.3, 0.3, 0.3) rotateX(-20deg) rotateY(10deg);
+    opacity: 0;
+  }
+  100% {
+    transform: scale3d(1, 1, 1) rotateX(0) rotateY(0);
+    opacity: 1;
+  }
+}
+.textoNavbar {
+  display: inline-block;
+  color: rgb(5, 97, 151);
+  animation: zoomIn3D 2s ease-out forwards;
+  transform-origin: center;
 }
 
 .carousel .carousel-item img.carousel-img {
@@ -282,6 +416,63 @@ nav.navbar .container-fluid .navbar-nav .nav-item .nav-link:hover, nav.navbar .c
   color: white;
   padding: 0 1rem;
   border-radius: 15px;
+}
+
+.pieDePafina {
+  background-color: #9c9c9c;
+  padding: 2rem 1rem;
+}
+.pieDePafina .container-fluid .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.pieDePafina .container-fluid .row .escudo-footer {
+  height: 150px;
+}
+.pieDePafina .container-fluid .row .infoFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.pieDePafina .container-fluid .row .infoFooter ul {
+  list-style: none;
+  padding: 0;
+}
+.pieDePafina .container-fluid .row .infoFooter ul li {
+  margin-bottom: 5px;
+}
+.pieDePafina .container-fluid .row .infoFooter ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+.pieDePafina .container-fluid .row .infoFooter ul li a:hover {
+  color: #ffc107;
+}
+.pieDePafina .container-fluid .row .infoFooter .numeroTelefono {
+  display: block;
+  margin-top: 10px;
+  color: royalblue;
+  font-weight: bold;
+}
+.pieDePafina .container-fluid .row .redes {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+.pieDePafina .container-fluid .row .redes svg {
+  width: 28px;
+  height: 28px;
+  fill: white;
+  transition: transform 0.3s ease, fill 0.3s ease;
+}
+.pieDePafina .container-fluid .row .redes svg:hover {
+  transform: scale(1.1);
+  fill: #ffc107;
 }
 
 /*# sourceMappingURL=style.css.map */

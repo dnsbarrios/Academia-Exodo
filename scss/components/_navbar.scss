@@ -42,3 +42,21 @@ nav.navbar {
     }
   }
 }
+
+@keyframes zoomIn3D {
+  0% {
+    transform: scale3d(0.3, 0.3, 0.3) rotateX(-20deg) rotateY(10deg);
+    opacity: 0;
+  }
+  100% {
+    transform: scale3d(1, 1, 1) rotateX(0) rotateY(0);
+    opacity: 1;
+  }
+}
+
+.textoNavbar {
+  display: inline-block;
+  color: var.$primary-color;
+  animation: zoomIn3D 2s ease-out forwards;
+  transform-origin: center;
+}

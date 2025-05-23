@@ -13,6 +13,11 @@
       integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
       crossorigin="anonymous"
     />
+    <!-- AOS CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Navbar -->
@@ -221,24 +226,27 @@
       <hr />
       <article class="sobre-la-academia">
         <img src="assets/img/sobre-la-academia.JPG" alt="Imagen academia" />
-        <h3>SOBRE LA ACADEMIA</h3>
-        <p>
-          Bienvenidos a Exodo Center Donde la pasión por el fútbol se entrena
-          todos los días. Formamos jugadores desde lo técnico hasta lo humano,
-          en un ambiente de respeto, compañerismo y mucho ritmo de pelota.
-          ¿Estás listo para dar tu primer pase con nosotros?
-        </p>
+        <div class="overlay"></div>
+        <div class="contenido" data-aos="fade-up">
+          <h3>SOBRE LA ACADEMIA</h3>
+          <p>
+            Bienvenidos a Éxodo Center. Donde la pasión por el fútbol se entrena
+            todos los días. Formamos jugadores desde lo técnico hasta lo humano,
+            en un ambiente de respeto, compañerismo y mucho ritmo de pelota.
+            ¿Estás listo para dar tu primer pase con nosotros?
+          </p>
+        </div>
       </article>
       <hr />
-      <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="row row-cols-1 row-cols-md-3 g-4 testimonios-jugadores">
         <div class="col">
-          <div class="card h-100">
+          <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
             <img
               src="assets/img/testimonio1 1.jpg"
-              class="card-img-top"
-              alt="..."
+              class="card-img-top object-contain p-3 bg-light"
+              alt="Thiago"
             />
-            <div class="card-body">
+            <div class="card-body text-center">
               <h5 class="card-title">Thiago</h5>
               <p class="card-text">
                 "Gracias a los profes, hoy juego con más confianza y aprendí a
@@ -248,13 +256,13 @@
           </div>
         </div>
         <div class="col">
-          <div class="card h-100">
+          <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
             <img
               src="assets/img/testimonio2 2.jpg"
-              class="card-img-top"
-              alt="..."
+              class="card-img-top object-contain p-3 bg-light"
+              alt="Rebeca"
             />
-            <div class="card-body">
+            <div class="card-body text-center">
               <h5 class="card-title">Rebeca</h5>
               <p class="card-text">
                 "Entrenar acá me ayudó a mejorar como jugadora y persona. Me
@@ -264,13 +272,13 @@
           </div>
         </div>
         <div class="col">
-          <div class="card h-100">
+          <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
             <img
               src="assets/img/testimonio3 3.jpg"
-              class="card-img-top"
-              alt="..."
+              class="card-img-top object-contain p-3 bg-light"
+              alt="Santi"
             />
-            <div class="card-body">
+            <div class="card-body text-center">
               <h5 class="card-title">Santi</h5>
               <p class="card-text">
                 "Cada práctica es un desafío y una alegría. Acá aprendí que el
@@ -280,6 +288,7 @@
           </div>
         </div>
       </div>
+
       <hr />
     </main>
     <!-- Footer -->
@@ -349,5 +358,13 @@
       integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
       crossorigin="anonymous"
     ></script>
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1200, // duración de la animación en ms
+        once: true, // la animación se ejecuta solo una vez
+      });
+    </script>
   </body>
 </html>

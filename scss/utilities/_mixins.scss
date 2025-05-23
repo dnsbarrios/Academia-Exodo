@@ -16,7 +16,7 @@
   font-size: clamp(2rem, 6vw, 4rem);
   text-align: center;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
-  color: greenyellow;
+  color: rgb(241, 241, 241);
 }
 
 @mixin boton-principal($bg-color: #0dcaf0, $hover-color: #0aa1c2) {
