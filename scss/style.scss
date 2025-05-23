@@ -1,0 +1,13 @@
+@use "./base/variables" as var;
+@use "./base/reset";
+@use "./base/fonts";
+@use "./utilities/mixins" as mix;
+@use "./utilities/extends";
+
+@use "./layout/sobre-nosotros";
+@use "./layout/contacto";
+@use "./layout/inscripciones";
+@use "./layout/programas";
+
+@use "./components/navbar";
+@use "./components/carousel";
