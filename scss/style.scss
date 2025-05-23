@@ -1,17 +1,17 @@
 // Importaciones principales
-@use 'base/reset';
-@use 'base/fonts';
-@use 'base/variables';
-@use 'utilities/mixins';
-@use 'utilities/extends';
+@import "./base/reset";
+@import "./base/fonts";
+@import "./utilities/variables";
+@import "./utilities/mixins";
+@import "./utilities/extends";
 
-@use 'components/navbar';
-@use 'components/footer';
-@use 'components/carousel';
-@use 'components/sobre-la-academia';
-@use 'components/nuestro-equipo';
+@import "./components/navbar";
+@import "./components/footer";
+@import "./components/carousel";
+@import "./components/sobre-la-academia";
+@import "./components/nuestro-equipo";
 
-@use 'layout/sobre-nosotros';
-@use 'layout/programas';
-@use 'layout/contacto';
-@use 'layout/inscripciones';
+@import "./layout/sobre-nosotros";
+@import "./layout/programas";
+@import "./layout/contacto";
+@import "./layout/inscripciones";

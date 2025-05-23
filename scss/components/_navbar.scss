@@ -1,9 +1,11 @@
+@use '../base/variables' as var;
+@use '../utilities/mixins' as mix;
+
 nav.navbar {
   background-color: #f8f9fa;
 
   .container-fluid {
-    display: flex;
-    align-items: center;
+    @include mix.center-flex;
     justify-content: space-between;
     flex-wrap: wrap;
 
@@ -12,12 +14,12 @@ nav.navbar {
     }
 
     .navbar-brand {
-      font-family: "prometo trial titulos", sans-serif;
+      font-family: var.$font-titulo;
       font-size: 1.8rem;
       font-weight: bold;
 
       .inicialExodo {
-        color: $primary-color;
+        color: var.$primary-color;
       }
     }
 
@@ -26,35 +28,15 @@ nav.navbar {
         margin-left: 10px;
 
         .nav-link {
-          font-family: "prometo trial subtitulos", sans-serif;
+          font-family: var.$font-texto;
           font-weight: bold;
-          color: #333;
+          color: var.$dark-color;
           transition: color 0.3s ease;
 
-          &:hover {
-            color: $primary-color;
-          }
-
+          &:hover,
           &.active {
-            color: $primary-color;
+            color: var.$primary-color;
           }
-        }
-      }
-    }
-
-    .redes {
-      display: flex;
-      gap: 15px;
-
-      svg {
-        width: 28px;
-        height: 28px;
-        fill: #333;
-        transition: transform 0.3s ease, fill 0.3s ease;
-
-        &:hover {
-          transform: scale(1.1);
-          fill: $primary-color;
         }
       }
     }
