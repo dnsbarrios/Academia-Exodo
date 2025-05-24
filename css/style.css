@@ -320,7 +320,7 @@
 }
 
 nav.navbar {
-  background-color: #f8f9fa;
+  background-color: #000000;
 }
 nav.navbar .container-fluid {
   display: flex;
@@ -330,7 +330,7 @@ nav.navbar .container-fluid {
   flex-wrap: wrap;
 }
 nav.navbar .container-fluid .escudo {
-  height: 150px;
+  height: 160px;
 }
 nav.navbar .container-fluid .navbar-brand {
   font-family: "Rajdhani", sans-serif;
@@ -354,6 +354,11 @@ nav.navbar .container-fluid .navbar-nav .nav-item .nav-link:hover, nav.navbar .c
   color: rgb(5, 97, 151);
 }
 
+.estilonav {
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0);
+}
+
 @keyframes zoomIn3D {
   0% {
     transform: scale3d(0.3, 0.3, 0.3) rotateX(-20deg) rotateY(10deg);
@@ -364,7 +369,8 @@ nav.navbar .container-fluid .navbar-nav .nav-item .nav-link:hover, nav.navbar .c
     opacity: 1;
   }
 }
-.textoNavbar {
+.textoNavbar,
+.escudo {
   display: inline-block;
   color: rgb(5, 97, 151);
   animation: zoomIn3D 2s ease-out forwards;

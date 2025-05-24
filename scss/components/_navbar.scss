@@ -2,7 +2,7 @@
 @use "../utilities/mixins" as mix;
 
 nav.navbar {
-  background-color: #f8f9fa;
+  background-color: #000000;
 
   .container-fluid {
     @include mix.center-flex;
@@ -10,7 +10,7 @@ nav.navbar {
     flex-wrap: wrap;
 
     .escudo {
-      height: 150px;
+      height: 160px;
     }
 
     .navbar-brand {
@@ -43,7 +43,10 @@ nav.navbar {
     }
   }
 }
-
+.estilonav {
+  justify-content: center;
+  background-color: #ffffff00;
+}
 @keyframes zoomIn3D {
   0% {
     transform: scale3d(0.3, 0.3, 0.3) rotateX(-20deg) rotateY(10deg);
@@ -55,7 +58,8 @@ nav.navbar {
   }
 }
 
-.textoNavbar {
+.textoNavbar,
+.escudo {
   display: inline-block;
   color: var.$primary-color;
   animation: zoomIn3D 2s ease-out forwards;
