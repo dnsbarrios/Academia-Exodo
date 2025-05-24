@@ -4,6 +4,35 @@
   box-sizing: border-box;
 }
 
+body.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+body.dark-mode .navbar,
+body.dark-mode footer {
+  background-color: #1e1e1e !important;
+}
+body.dark-mode .nav-link,
+body.dark-mode .navbar-brand {
+  color: #fcfcfc !important;
+}
+body.dark-mode .accordion-button {
+  color: #090909 !important;
+}
+body.dark-mode .card,
+body.dark-mode .accordion-body {
+  background-color: #ffffff;
+  color: #000000;
+}
+body.dark-mode .btn-outline-dark {
+  border-color: #ffc107;
+  color: #ffc107;
+}
+body.dark-mode .btn-outline-dark:hover {
+  background-color: #ffc107;
+  color: #010101;
+}
+
 .sobreNosotros {
   position: relative;
   width: 100%;
@@ -319,6 +348,23 @@
   color: #555;
 }
 
+.seccion-dinamica h2,
+.seccion-dinamica h3 {
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.seccion-dinamica .accordion-button {
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.seccion-dinamica .accordion-body {
+  background-color: #f8f9fa;
+  color: #333;
+  font-family: sans-serif;
+}
+
 nav.navbar {
   background-color: #000000;
 }
@@ -375,6 +421,41 @@ nav.navbar .container-fluid .navbar-nav .nav-item .nav-link:hover, nav.navbar .c
   color: rgb(5, 97, 151);
   animation: zoomIn3D 2s ease-out forwards;
   transform-origin: center;
+}
+
+.modo-switch {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+.modo-switch input[type=checkbox] {
+  display: none;
+}
+.modo-switch input[type=checkbox]:checked + label {
+  background-color: #ffc107;
+}
+.modo-switch input[type=checkbox]:checked + label .switch-thumb {
+  transform: translateX(22px);
+  background-color: #000;
+}
+.modo-switch label {
+  width: 44px;
+  height: 24px;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 2px;
+  position: relative;
+}
+.modo-switch .switch-thumb {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .carousel .carousel-item img.carousel-img {

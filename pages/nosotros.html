@@ -65,6 +65,12 @@
               </li>
             </ul>
           </div>
+          <div class="modo-switch">
+            <input type="checkbox" id="toggle-mode" />
+            <label for="toggle-mode">
+              <span class="switch-thumb"></span>
+            </label>
+          </div>
           <div class="redes">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -242,5 +248,17 @@
       integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
       crossorigin="anonymous"
     ></script>
+    <!-- modo oscuro -->
+    <script>
+      const toggle = document.getElementById("toggle-mode");
+      const body = document.body;
+
+      toggle.addEventListener("click", () => {
+        body.classList.toggle("dark-mode");
+        toggle.textContent = body.classList.contains("dark-mode")
+          ? "Modo Claro"
+          : "Modo Oscuro";
+      });
+    </script>
   </body>
 </html>

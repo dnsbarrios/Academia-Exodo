@@ -1,0 +1,33 @@
+body.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+
+  .navbar,
+  footer {
+    background-color: #1e1e1e !important;
+  }
+
+  .nav-link,
+  .navbar-brand {
+    color: #fcfcfc !important;
+  }
+  .accordion-button {
+    color: #090909 !important;
+  }
+
+  .card,
+  .accordion-body {
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+  .btn-outline-dark {
+    border-color: #ffc107;
+    color: #ffc107;
+
+    &:hover {
+      background-color: #ffc107;
+      color: #010101;
+    }
+  }
+}

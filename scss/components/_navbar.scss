@@ -65,3 +65,45 @@ nav.navbar {
   animation: zoomIn3D 2s ease-out forwards;
   transform-origin: center;
 }
+
+// modo oscuro
+
+.modo-switch {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+
+  input[type="checkbox"] {
+    display: none;
+
+    &:checked + label {
+      background-color: #ffc107;
+
+      .switch-thumb {
+        transform: translateX(22px);
+        background-color: #000;
+      }
+    }
+  }
+
+  label {
+    width: 44px;
+    height: 24px;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 2px;
+    position: relative;
+  }
+
+  .switch-thumb {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+}

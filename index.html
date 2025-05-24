@@ -13,6 +13,11 @@
       integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -70,6 +75,12 @@
                 <a class="nav-link" href="pages/contacto.html">CONTACTO</a>
               </li>
             </ul>
+          </div>
+          <div class="modo-switch">
+            <input type="checkbox" id="toggle-mode" />
+            <label for="toggle-mode">
+              <span class="switch-thumb"></span>
+            </label>
           </div>
           <div class="redes">
             <svg
@@ -297,6 +308,73 @@
       </div>
 
       <hr />
+      <!-- Sección Dinámica e Interactiva para Academia -->
+      <section class="seccion-dinamica container py-5">
+        <h2 class="text-center mb-4" data-aos="fade-up">
+          Explorá más de nuestra Academia
+        </h2>
+
+        <!-- Estadísticas animadas -->
+        <div class="row text-center mb-5">
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="display-4">+50</h3>
+            <p>Jugadores Activos</p>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="display-4">3</h3>
+            <p>Torneos Ganados</p>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <h3 class="display-4">5 Años</h3>
+            <p>Formando Talentos</p>
+          </div>
+        </div>
+
+        <!-- Embed de Instagram -->
+        <div class="mb-5" data-aos="zoom-in">
+          <h3 class="text-center">Últimas novedades en Instagram</h3>
+          <div
+            class="elfsight-app-83e5885f-74c5-4a2d-9a09-bb49f72c4796"
+            data-elfsight-app-lazy
+          ></div>
+        </div>
+
+        <!-- FAQ Accordion -->
+        <div class="accordion" id="faqAccordion" data-aos="fade-right">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+              >
+                ¿Desde qué edad se puede inscribir?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show">
+              <div class="accordion-body">Desde los 5 años en adelante.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+              >
+                ¿Necesito experiencia previa?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                No, trabajamos con todos los niveles.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- Footer -->
     <footer class="pieDePafina">
@@ -371,6 +449,24 @@
       AOS.init({
         duration: 1200, // duración de la animación en ms
         once: true, // la animación se ejecuta solo una vez
+      });
+    </script>
+    <!-- Elfsight Instagram Feed | EXOdo -->
+    <script
+      src="https://static.elfsight.com/platform/platform.js"
+      async
+    ></script>
+
+    <!-- modo oscuro -->
+    <script>
+      const toggle = document.getElementById("toggle-mode");
+      const body = document.body;
+
+      toggle.addEventListener("click", () => {
+        body.classList.toggle("dark-mode");
+        toggle.textContent = body.classList.contains("dark-mode")
+          ? "Modo Claro"
+          : "Modo Oscuro";
       });
     </script>
   </body>

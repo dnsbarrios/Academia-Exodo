@@ -1,5 +1,6 @@
 @use "./utilities/variables" as var;
 @use "./base/reset";
+@use "./base/dark-mode";
 
 @use "./utilities/mixins" as mix;
 @use "./utilities/extends";
