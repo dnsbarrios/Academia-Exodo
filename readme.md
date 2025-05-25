@@ -3,7 +3,7 @@
 
 <h3 align="left">🤝 Este proyecto es una plataforma web pensada para academias de entrenamiento enfocadas en el fútbol. Su objetivo es digitalizar la gestión de entrenamientos, seguimiento de jugadores y planificación técnica, todo desde un solo lugar.  ## 🎯 Objetivos  - Facilitar la organización de sesiones de entrenamiento. - Hacer seguimiento del rendimiento físico y técnico de los jugadores. - Mejorar la comunicación entre entrenadores, jugadores y padres. - Modernizar el funcionamiento de academias deportivas.</h3>
 
-<h3 align="left">## 🚀 Funcionalidades (actuales y futuras) -✅Informacion de planes de entrenamiento  - ✅ Registro y gestión de jugadores - 🔜 Calendario de entrenamientos - 🔜 Carga de estadísticas por sesión - 🔜 Informes personalizados y gráficos de rendimiento - 🔜 Acceso para padres/tutores - 🔜 Módulo de nutrición y seguimiento físico</h3>
+<h3 align="left">## 🚀 Funcionalidades (actuales y futuras) -✅Informacion de planes de entrenamiento  - ✅ Registro y gestión de jugadores -✅Modo Oscuro - 🔜 Calendario de entrenamientos - 🔜 Carga de estadísticas por sesión - 🔜 Informes personalizados y gráficos de rendimiento - 🔜 Acceso para padres/tutores - 🔜 Módulo de nutrición y seguimiento físico</h3>
 <p align="left">
 <a href="https://linkedin.com/in/www.linkedin.com/in/denis-barrios-53820433b" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="www.linkedin.com/in/denis-barrios-53820433b" height="30" width="40" /></a>
 </p>
