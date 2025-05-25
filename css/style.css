@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,800;1,800&family=Rajdhani:wght@300;400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -70,14 +71,16 @@ body.dark-mode .btn-outline-dark:hover {
   padding: 2rem;
 }
 .sobreNosotros .contenido1 h3 {
-  font-size: clamp(2rem, 5vw, 3.5rem);
-  font-family: "prometo trial titulos";
+  font-family: "Exo 2", sans-serif;
+  font-size: clamp(2rem, 6vw, 4rem);
   margin-bottom: 1rem;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
 }
 .sobreNosotros .contenido1 p {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 500;
+  font-style: normal;
   font-size: clamp(1rem, 2.5vw, 1.5rem);
-  font-family: "prometo trial subtitulos";
   text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
 }
 
@@ -112,15 +115,16 @@ body.dark-mode .btn-outline-dark:hover {
   text-align: center;
 }
 .nuestroEquipo .card-equipo .card-body h5 {
+  font-family: "Exo 2", sans-serif;
+  font-size: 1.3rem;
+  color: #333;
   font-size: 1.4rem;
   margin-bottom: 0.75rem;
-  font-family: "prometo trial titulos";
-  color: #333;
 }
 .nuestroEquipo .card-equipo .card-body p {
+  font-family: "Rajdhani", sans-serif;
   font-size: 1rem;
-  font-family: "prometo trial subtitulos";
-  color: #555;
+  color: #000000;
   line-height: 1.5;
 }
 
@@ -153,6 +157,7 @@ body.dark-mode .btn-outline-dark:hover {
   text-align: center;
 }
 .overlay h2 {
+  font-family: "Exo 2", sans-serif;
   font-size: 2.5rem;
   margin-top: 30px;
   margin-bottom: 5px;
@@ -167,6 +172,9 @@ body.dark-mode .btn-outline-dark:hover {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
 .info-contacto p {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 600;
+  font-style: normal;
   margin: 10px 0;
   font-size: 1.1rem;
 }
@@ -176,6 +184,7 @@ body.dark-mode .btn-outline-dark:hover {
 }
 
 .btn-mapa {
+  font-family: "Exo 2", sans-serif;
   display: inline-block;
   margin-top: 0px;
   padding: 10px 20px;
@@ -243,11 +252,18 @@ body.dark-mode .btn-outline-dark:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(3px);
 }
+.inscripcion .resaltar-titulos h2 {
+  font-family: "Exo 2", sans-serif;
+}
+.inscripcion .resaltar-titulos p {
+  font-family: "Exo 2", sans-serif;
+}
 .inscripcion form input,
 .inscripcion form textarea {
   border-radius: 8px;
 }
 .inscripcion form button {
+  font-family: "Exo 2", sans-serif;
   font-weight: bold;
 }
 
@@ -320,49 +336,57 @@ body.dark-mode .btn-outline-dark:hover {
   text-align: center;
 }
 .sobre-la-academia .contenido h3 {
+  font-family: "Exo 2", sans-serif;
   font-size: clamp(2rem, 6vw, 4rem);
-  font-family: "prometo trial titulos", sans-serif;
   margin-bottom: 1rem;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
 }
 .sobre-la-academia .contenido p {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 500;
+  font-style: normal;
   font-size: clamp(1rem, 3vw, 1.5rem);
-  font-family: "prometo trial subtitulos", sans-serif;
   max-width: 800px;
   text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
 }
 
-.testimonios-jugadores img {
+.testimonios-jugadores .col .card img {
   background-color: #f8f9fa;
   border-bottom: 3px solid #ffc107;
+  object-fit: contain;
+  padding: 1rem;
 }
-
-.testimonios-jugadores .card-title {
-  font-family: "pometo trial titulos", sans-serif;
+.testimonios-jugadores .col .card .card-body {
+  text-align: center;
+}
+.testimonios-jugadores .col .card .card-body .card-title {
+  font-family: "Exo 2", sans-serif;
   font-size: 1.3rem;
   color: #333;
 }
-
-.testimonios-jugadores .card-text {
-  font-family: "pometo trial subtitulos", sans-serif;
-  color: #555;
+.testimonios-jugadores .col .card .card-body .card-text {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #000000;
 }
 
 .seccion-dinamica h2,
 .seccion-dinamica h3 {
-  font-family: sans-serif;
+  font-family: "Exo 2", sans-serif;
   font-weight: bold;
   text-align: center;
   margin-bottom: 1.5rem;
 }
 .seccion-dinamica .accordion-button {
-  font-weight: bold;
-  font-family: sans-serif;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 500;
+  font-style: bold;
 }
 .seccion-dinamica .accordion-body {
   background-color: #f8f9fa;
-  color: #333;
-  font-family: sans-serif;
+  color: #1f1f1f;
+  font-family: "Rajdhani", sans-serif;
 }
 
 nav.navbar {
@@ -382,7 +406,7 @@ nav.navbar .container-fluid .navbar-brand {
   font-family: "Rajdhani", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
 }
 nav.navbar .container-fluid .navbar-brand .inicialExodo {
   color: rgb(5, 97, 151);
@@ -391,9 +415,11 @@ nav.navbar .container-fluid .navbar-nav .nav-item {
   margin-left: 10px;
 }
 nav.navbar .container-fluid .navbar-nav .nav-item .nav-link {
-  font-family: "prometo trial subtitulos", sans-serif;
-  font-weight: bold;
-  color: #333333;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+  font-style: normal;
+  color: #000000;
   transition: color 0.3s ease;
 }
 nav.navbar .container-fluid .navbar-nav .nav-item .nav-link:hover, nav.navbar .container-fluid .navbar-nav .nav-item .nav-link.active {
@@ -472,11 +498,13 @@ nav.navbar .container-fluid .navbar-nav .nav-item .nav-link:hover, nav.navbar .c
   bottom: 21%;
 }
 .carousel .carousel-item .carousel-caption button {
-  background-color: #0dcaf0;
+  background-color: rgb(5, 97, 151);
   color: white;
   padding: 0.75rem 1.5rem;
-  font-family: "Prometo Trial";
-  font-weight: bold;
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
   border: none;
   transition: background-color 0.3s ease;
 }
@@ -484,11 +512,13 @@ nav.navbar .container-fluid .navbar-nav .nav-item .nav-link:hover, nav.navbar .c
   background-color: #0aa1c2;
 }
 .carousel .carousel-item .carousel-caption .fraseCarousel {
-  margin-top: 1.5rem;
-  font-style: italic;
+  font-family: "Rajdhani", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
   font-size: clamp(1rem, 2.5vw, 1.5rem);
-  font-family: "prometo trial subtitulos", sans-serif;
   color: white;
+  margin-top: 1.5rem;
   padding: 0 1rem;
   border-radius: 15px;
 }
@@ -517,6 +547,10 @@ nav.navbar .container-fluid .navbar-nav .nav-item .nav-link:hover, nav.navbar .c
   padding: 0;
 }
 .pieDePafina .container-fluid .row .infoFooter ul li {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
   margin-bottom: 5px;
 }
 .pieDePafina .container-fluid .row .infoFooter ul li a {

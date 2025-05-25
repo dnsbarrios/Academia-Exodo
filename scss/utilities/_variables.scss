@@ -1,9 +1,12 @@
 $primary-color: rgb(5, 97, 151);
 $light-color: #ffffff;
-$dark-color: #333333;
+$dark-color: #000000;
 $highlight-color: #ffc107;
 
-$font-titulo: "prometo trial titulos", sans-serif;
-$font-texto: "prometo trial subtitulos", sans-serif;
+// tipografia
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,800;1,800&family=Rajdhani:wght@300;400;500;600;700&display=swap");
 
-$font-stack: "prometo trial subtitulos", "prometo trial titulos";
+$font-logo: "Rajdhani", sans-serif;
+$font-navbar: "Rajdhani", sans-serif;
+$font-titulo: "Exo 2", sans-serif;
+$font-texto: "Rajdhani", sans-serif;

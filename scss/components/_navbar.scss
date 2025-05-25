@@ -14,10 +14,10 @@ nav.navbar {
     }
 
     .navbar-brand {
-      font-family: "Rajdhani", sans-serif;
+      font-family: var.$font-logo;
       font-weight: 700;
       font-style: normal;
-      font-size: 2.5rem;
+      font-size: 3.5rem;
 
       .inicialExodo {
         color: var.$primary-color;
@@ -29,8 +29,10 @@ nav.navbar {
         margin-left: 10px;
 
         .nav-link {
-          font-family: var.$font-texto;
-          font-weight: bold;
+          font-family: var.$font-navbar;
+          font-weight: 600;
+          font-size: 1.4rem;
+          font-style: normal;
           color: var.$dark-color;
           transition: color 0.3s ease;
 

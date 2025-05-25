@@ -37,15 +37,17 @@
     text-align: center;
 
     h3 {
+      font-family: "Exo 2", sans-serif;
       font-size: clamp(2rem, 6vw, 4rem);
-      font-family: "prometo trial titulos", sans-serif;
       margin-bottom: 1rem;
       text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
     }
 
     p {
+      font-family: "Rajdhani", sans-serif;
+      font-weight: 500;
+      font-style: normal;
       font-size: clamp(1rem, 3vw, 1.5rem);
-      font-family: "prometo trial subtitulos", sans-serif;
       max-width: 800px;
       text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
     }
@@ -53,40 +55,66 @@
 }
 
 // Cards jugadores
-.testimonios-jugadores img {
-  background-color: #f8f9fa;
-  border-bottom: 3px solid #ffc107;
+.testimonios-jugadores {
+  .col {
+    .card {
+      &.h-100 {
+        &.shadow-sm {
+          &.border-0 {
+            &.rounded-4 {
+              &.overflow-hidden {
+              }
+            }
+          }
+        }
+      }
+
+      img {
+        background-color: #f8f9fa;
+        border-bottom: 3px solid #ffc107;
+        object-fit: contain;
+        padding: 1rem;
+      }
+
+      .card-body {
+        text-align: center;
+
+        .card-title {
+          font-family: "Exo 2", sans-serif;
+          font-size: 1.3rem;
+          color: #333;
+        }
+
+        .card-text {
+          font-family: "Rajdhani", sans-serif;
+          font-weight: 500;
+          font-style: normal;
+          color: #000000;
+        }
+      }
+    }
+  }
 }
 
-.testimonios-jugadores .card-title {
-  font-family: "pometo trial titulos", sans-serif;
-  font-size: 1.3rem;
-  color: #333;
-}
-
-.testimonios-jugadores .card-text {
-  font-family: "pometo trial subtitulos", sans-serif;
-  color: #555;
-}
-
-// <!-- Sección Dinámica e Interactiva para Academia -- >
+// Sección Dinámica e Interactiva para Academia
 .seccion-dinamica {
   h2,
   h3 {
-    font-family: sans-serif;
+    font-family: "Exo 2", sans-serif;
     font-weight: bold;
     text-align: center;
     margin-bottom: 1.5rem;
   }
 
   .accordion-button {
-    font-weight: bold;
-    font-family: sans-serif;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 500;
+    font-style: bold;
   }
 
   .accordion-body {
     background-color: #f8f9fa;
-    color: #333;
-    font-family: sans-serif;
+    color: #1f1f1f;
+    font-family: "Rajdhani", sans-serif;
   }
 }

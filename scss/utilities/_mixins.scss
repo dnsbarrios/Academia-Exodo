@@ -12,19 +12,22 @@
 }
 
 @mixin titulo-principal {
-  font-family: "prometo trial titulos";
-  font-size: clamp(2rem, 6vw, 4rem);
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 700;
+  font-style: normal;
   text-align: center;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
   color: rgb(241, 241, 241);
 }
 
-@mixin boton-principal($bg-color: #0dcaf0, $hover-color: #0aa1c2) {
+@mixin boton-principal($bg-color: rgb(5, 97, 151), $hover-color: #0aa1c2) {
   background-color: $bg-color;
   color: white;
   padding: 0.75rem 1.5rem;
-  font-family: "Prometo Trial";
-  font-weight: bold;
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
   border: none;
   transition: background-color 0.3s ease;
 
